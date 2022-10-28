@@ -19,16 +19,19 @@ function changeHorn() {
 
   let soundImg = document.getElementById("expose").querySelector("img");
   if (hornSelect.value == "air-horn") { 
-    soundImg.src="../assets/images/air-horn.svg";
-    audio.src="../assets/audio/air-horn.mp3";
+    soundImg.src="/Lab5_Starter/assets/images/air-horn.svg";
+    soundImg.alt="Air Horn";
+    audio.src="/Lab5_Starter/assets/audio/air-horn.mp3";
   }
   else if (hornSelect.value == "car-horn") {
-    soundImg.src="../assets/images/car-horn.svg";
-    audio.src="../assets/audio/car-horn.mp3";
+    soundImg.src="/Lab5_Starter/assets/images/car-horn.svg";
+    soundImg.alt="Car Horn";
+    audio.src="/Lab5_Starter/assets/audio/car-horn.mp3";
   }
   else if (hornSelect.value == "party-horn") {
-    soundImg.src="../assets/images/party-horn.svg";
-    audio.src="../assets/audio/party-horn.mp3";
+    soundImg.src="/Lab5_Starter/assets/images/party-horn.svg";
+    soundImg.alt="Party Horn";
+    audio.src="/Lab5_Starter/assets/audio/party-horn.mp3";
   }
 }
 
@@ -38,14 +41,22 @@ function changeAudio () {
   audio.volume = volSetting / 100;
   
   let icon = document.querySelector('img[alt="Volume level 2"]');
-  if (volSetting == 0)
-    icon.src = "../assets/icons/volume-level-0.svg";
-  else if (volSetting < 33)
-    icon.src = "../assets/icons/volume-level-1.svg";
-  else if (volSetting < 67)
-    icon.src = "../assets/icons/volume-level-2.svg";
-  else 
-    icon.src = "../assets/icons/volume-level-3.svg";
+  if (volSetting == 0) {
+    icon.src = "/Lab5_Starter/assets/icons/volume-level-0.svg";
+    icon.alt="Volume Level 0";
+  }
+  else if (volSetting < 33) {
+    icon.src = "/Lab5_Starter/assets/icons/volume-level-1.svg";
+    icon.alt="Volume Level 1";
+  }
+  else if (volSetting < 67) {
+    icon.src = "/Lab5_Starter/assets/icons/volume-level-2.svg";
+    icon.alt="Volume Level 2";
+  }
+  else {
+    icon.src = "/Lab5_Starter/assets/icons/volume-level-3.svg";
+    icon.alt="Volume Level 3";
+  }
 }
 
 function playSound () {
