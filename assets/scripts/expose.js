@@ -43,19 +43,19 @@ function changeAudio () {
   let icon = document.querySelector('img[alt="Volume level 2"]');
   if (volSetting == 0) {
     icon.src = "/Lab5_Starter/assets/icons/volume-level-0.svg";
-    icon.alt="Volume Level 0";
+    icon.alt="Volume level 0";
   }
   else if (volSetting < 33) {
     icon.src = "/Lab5_Starter/assets/icons/volume-level-1.svg";
-    icon.alt="Volume Level 1";
+    icon.alt="Volume level 1";
   }
   else if (volSetting < 67) {
     icon.src = "/Lab5_Starter/assets/icons/volume-level-2.svg";
-    icon.alt="Volume Level 2";
+    icon.alt="Volume level 2";
   }
   else {
     icon.src = "/Lab5_Starter/assets/icons/volume-level-3.svg";
-    icon.alt="Volume Level 3";
+    icon.alt="Volume level 3";
   }
 }
 
