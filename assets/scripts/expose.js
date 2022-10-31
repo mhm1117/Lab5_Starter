@@ -40,7 +40,7 @@ function changeAudio () {
   let volSetting = document.getElementById("volume").value;
   audio.volume = volSetting / 100;
   
-  let icon = document.querySelector('img[alt="Volume level 2"]');
+  let icon = document.getElementById("volume-controls").querySelector("img");
   if (volSetting == 0) {
     icon.src = "/Lab5_Starter/assets/icons/volume-level-0.svg";
     icon.alt="Volume level 0";
